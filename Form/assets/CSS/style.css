@@ -1,0 +1,262 @@
+* {
+	font-family: Arial;
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h4 {
+	color: #0A254E;
+}
+
+p  {
+	margin: 0;
+}
+
+label {
+	float:left;
+	color: black;
+}
+
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=number] {
+	-moz-appearance: textfield; /* Firefox */
+    width: 100%;
+  	padding: 12px;
+  	border: 1px solid #ccc;
+  	box-sizing: border-box;
+  	resize: vertical;
+}
+
+select[name=month] {
+	border-radius: 4px;
+}
+
+button[type=submit] {
+	box-sizing: border-box;
+	resize: vertical;
+	width: 100%;
+	background-color: #2773cb;
+	color: white;
+	padding: 4%;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+
+
+.wrapper {
+	background:url("../bg-silhouette.svg"); 
+    background-repeat: no-repeat;
+    background-position: bottom;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.guest-form {
+	background-color: white;
+	box-shadow: 10px 10px 50px lightgrey;
+	text-align: center;
+	min-height: 70%;
+	width: 30%;
+	border-radius: 10px;
+	height: auto;
+	padding: 45px;
+}
+
+.wordmark-box {
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#wordmark {
+	width: 200px;
+	height: 50px;
+}
+
+.wordmark {
+	fill: #0A254E;
+}
+
+
+.input-box {
+	height: auto;
+	width: 100%;
+}
+
+#guest-account-form {	
+	justify-content: center;
+}
+
+.form-item {
+	margin-bottom: 20px;
+	width: 100%;
+
+}
+
+
+.email-box {
+	width: 100%;
+}
+
+.name-box {
+	width: 100%;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.first-name-box {
+	width: 48%;
+	float: left;
+
+}
+
+.last-name-box {
+	width: 48%;
+	float: left;
+
+}
+
+.date-box {
+	margin: 0;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.month-box {
+	width: 40%;
+}
+
+.day-box {
+	width: 20%;
+}
+
+.year-box {
+	width: 25%;
+
+}
+
+.next-box {
+	margin: 0;
+}
+
+#next-arrow {
+	margin-left: 5px;
+	width: 10px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.form-error {
+	text-align: left;
+	float: left;
+	color: red;
+	margin: 0;
+}
+
+.date-error {
+	margin-bottom: 2px;
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    html, body {
+		background:none;
+	}
+
+
+   .wrapper {
+   		max-height: 70%;
+   		width: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.guest-form {
+		height: 100%;
+		background-color: white;
+		box-shadow: none;
+		text-align: center;
+		border-radius: 10px;
+		width: 100%;
+		padding-bottom: 0;
+	}
+
+	.wordmark-box {
+		margin: 50px 0px;
+
+	}
+
+	.input-box {
+		width: 100%;
+	}
+
+
+}
+
+@media screen and (max-width: 400px) {
+	
+
+	.month-box {
+		width: 48%;
+	}
+
+	.day-box {
+		width: 20%;
+	}
+
+	.year-box {
+		width: 28%;
+	}
+}
+
